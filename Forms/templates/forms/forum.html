@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Мемы и форум</title>
+ <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="/страница форума/style.css">
+ <script src="script.js"></script>
+</head>
+<body>
+ <header>
+  <h1 class="h1_center">форум</h1>
+  <nav>
+   <ul>
+    <li><a class="gradient-button " href="#forum">Форум</a></li>
+    <li><a class="gradient-button" href="#about">О нас</a></li>
+   </ul>
+  </nav>
+ </header>
+
+ <main>
+  <section id="forum">
+   <h2>Форум</h2>
+   <div class="forum-container">
+    <div class="post">
+     <h3>Заголовок поста</h3>
+     <p>Текст поста. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, velit ac consectetur tincidunt, velit odio congue libero, at vulputate sapien quam a elit. Quisque varius, augue sed blandit varius, massa felis euismod orci, ac dignissim enim urna sit amet nulla. </p>
+     <div class="comments">
+      <h4>Комментарии</h4>
+      <div class="comment">
+       <p>Имя пользователя:</p>
+       <p>Текст комментария. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, velit ac consectetur tincidunt, velit odio congue libero, at vulputate sapien quam a elit.</p>
+      </div>
+      <div class="comment">
+       <p>Имя пользователя:</p>
+       <p>Текст комментария. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, velit ac consectetur tincidunt, velit odio congue libero, at vulputate sapien quam a elit.</p>
+       <div class="reply">
+        <p>Ответить</p>
+        <form action="post_comment.php" method="post">
+         <label for="comment">Текст комментария:</label>
+         <textarea name="comment" id="comment"></textarea>
+         <input type="submit" value="Отправить">
+        </form>
+       </div>
+      </div>
+      <!-- <div class="comment">
+       <p>Имя пользователя:</p>
+       <p>Текст комментария. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, velit ac consectetur tincidunt, velit odio congue libero, at vulputate sapien quam a elit.</p> -->
+      </div>
+     </div>
+     <!-- <div class="new-comment">
+      <h4>Добавить комментарий</h4>
+      <form action="post_comment.php" method="post">
+       <label for="comment">Текст комментария:</label>
+       <textarea name="comment" id="comment"></textarea>
+       <input type="submit" value="Отправить">
+      </form>
+     </div> -->
+    </div>
+   </div>
+  </section>
+
+  <section id="about">
+   <h2>О нас</h2>
+   <p>Мы - команда любителей мемов и общения. Наш сайт создан для того, чтобы вы могли поделиться своими любимыми мемами и обсудить интересные темы на форуме.</p>
+  </section>
+ </main>
+
+ <footer>
+  <p>© Мемы и форум, 2021</p>
+ </footer>
+</body>
+</html>
